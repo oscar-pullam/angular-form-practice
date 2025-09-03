@@ -1,10 +1,10 @@
 <main class="main">
   <mat-sidenav-container>
     <mat-sidenav mode="side" opened>
-      <step text="Your info"></step>
-      <step text="Select plan"></step>
-      <step text="Add-ons"></step>
-      <step text="Summary"></step>
+      <step text="Your info" [stepNumber]="1"></step>
+      <step text="Select plan" [stepNumber]="2"></step>
+      <step text="Add-ons" [stepNumber]="3"></step>
+      <step text="Summary" [stepNumber]="4"></step>
     </mat-sidenav>
     <mat-sidenav-content role="main">
       <div>

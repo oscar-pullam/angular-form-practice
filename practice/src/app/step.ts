@@ -9,4 +9,5 @@ import { MatButton } from '@angular/material/button';
 })
 export class Step {
    text = input.required<string>();
+   stepNumber = input.required<number>();
 }
