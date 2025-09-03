@@ -173,10 +173,10 @@
   mat-sidenav{
     background-color: aqua;
     padding: 1rem;
-    height: 100%;
+    height: stretch;
   }
 
   mat-sidenav-container{
-    height: 100%;
+    height: stretch;
     width: 100%;
   }
