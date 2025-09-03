@@ -8,10 +8,15 @@
     </mat-sidenav>
     <mat-sidenav-content role="main">
       <div>
-        <p>I am a form</p>
+        <p>Personal Info</p>
+        <p>Please provide your name, email address, and phone number</p>
         <mat-form-field>
-          <mat-label>Input</mat-label>
+          <mat-label>Name</mat-label>
           <input matInput id="name" type="text" [formControl]="name">
+        </mat-form-field>
+          <mat-form-field>
+          <mat-label>Email Address</mat-label>
+          <input matInput id="email" type="text" [formControl]="email">
         </mat-form-field>
       </div>
     </mat-sidenav-content>

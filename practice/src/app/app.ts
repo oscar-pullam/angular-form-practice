@@ -15,4 +15,5 @@ import { Step } from './step';
 export class App {
   protected readonly title = signal('practice');
   name = new FormControl('');
+  email = new FormControl('');
 }
