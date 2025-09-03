@@ -1,9 +1,9 @@
 import { Component, input } from '@angular/core';
-import { MatButton } from '@angular/material/button';
+import { MatButton, MatMiniFabButton } from '@angular/material/button';
 
 @Component({
   selector: 'step',
-  imports: [MatButton],
+  imports: [MatMiniFabButton],
   templateUrl: './step.html',
   styleUrl: './app.css'
 })
