@@ -170,3 +170,7 @@
       margin-block: 1.5rem;
     }
   }
+
+  mat-sidenav{
+    background-color: aqua;
+  }
