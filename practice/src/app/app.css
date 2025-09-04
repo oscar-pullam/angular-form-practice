@@ -220,12 +220,17 @@ mat-form-field{
   width: 500px;
 }
 
-.nextStep{
+.stepButton{
   background-color: var(--bright-blue);
   border-radius: 4px;
-  margin-left: 390px;
-  margin-right: 0;
+}
+
+.buttonContainer{
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row-reverse;
   margin-top: 2rem;
+  width: 500px;
 }
 
 .activeStep{

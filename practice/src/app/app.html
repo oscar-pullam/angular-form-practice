@@ -25,7 +25,12 @@
             <input matInput id="phone" type="tel" formControlName="phone" (keyup)="maskPhoneNo()" maxlength="14">
           </mat-form-field>
         </form>
-        <button matButton="filled" class="nextStep" (click)="nextStep()">Next Step</button>
+        <div class="buttonContainer">
+          <button matButton="filled" class="stepButton" (click)="nextStep()">Next Step</button>
+          @if (activeStep() != 1) {
+            <button matButton="filled" class="stepButton" (click)="previousStep()">Previous Step</button>
+          }
+        </div>
     </mat-sidenav-content>
   </mat-sidenav-container>
 </main>
