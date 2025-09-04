@@ -17,5 +17,6 @@ export class App {
   personalForm = new FormGroup({
     name: new FormControl(''),
     email: new FormControl(''),
+    phone: new FormControl(''),
   });
 }

@@ -12,14 +12,18 @@
         <p class="subtitle">Please provide your name, email address, and phone number</p>
         </div>
         <form [formGroup]="personalForm">
-        <mat-form-field appearance="outline" floatLabel="always" hintLabel="e.g. Stephen King">
-          <mat-label>Name</mat-label>
-          <input matInput id="name" type="text" formControlName="name">
-        </mat-form-field>
+          <mat-form-field appearance="outline" floatLabel="always" hintLabel="e.g. Stephen King">
+            <mat-label>Name</mat-label>
+            <input matInput id="name" type="text" formControlName="name">
+          </mat-form-field>
           <mat-form-field appearance="outline" floatLabel="always" hintLabel="e.g. stephenking@lorem.com">
-          <mat-label>Email Address</mat-label>
-          <input matInput id="email" type="text" formControlName="email">
-        </mat-form-field>
+            <mat-label>Email Address</mat-label>
+            <input matInput id="email" type="email" formControlName="email">
+          </mat-form-field>
+          <mat-form-field appearance="outline" floatLabel="always" hintLabel="e.g. +1 234 567 890">
+            <mat-label>Phone Number</mat-label>
+            <input matInput id="phone" type="tel" formControlName="phone">
+          </mat-form-field>
         </form>
     </mat-sidenav-content>
   </mat-sidenav-container>
