@@ -19,4 +19,14 @@ export class App {
     email: new FormControl(''),
     phone: new FormControl(''),
   });
+
+  public maskPhoneNo() {
+    console.log('Calling')
+    let el = document.getElementById("phone") as HTMLInputElement | null;
+    if(el == null) return;
+    let pnum = el.value.replace(/\D*/g,"");
+    if (pnum.length >= 3) { pnum = "("+pnum.slice(0,3)+") "+pnum.slice(3); }
+    if (pnum.length >= 9) { pnum = pnum.slice(0,9)+"-"+pnum.slice(9); }
+    el.value = pnum;
+  }
 }
