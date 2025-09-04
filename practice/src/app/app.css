@@ -177,7 +177,7 @@
   mat-sidenav{
     background-color: var(--bright-blue);
     color: white;
-    padding: 1rem;
+    padding: 3rem;
     height: stretch;
   }
 
@@ -241,4 +241,21 @@ mat-form-field{
   background-color: var(--bright-blue);
   border: 1px solid white;
   color: white;
+}
+
+.stepContainer{
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 3rem;
+}
+
+.stepText{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.stepDescription{
+  font-size: medium;
 }
