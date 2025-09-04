@@ -194,3 +194,17 @@
   border-radius: 100%;
   background-color: lightcyan;
 }
+
+mat-sidenav-content{
+  padding: 1rem;
+}
+
+.subtitle{
+  color: grey;
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.headers{
+  padding: 2rem 0;
+}
