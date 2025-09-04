@@ -219,3 +219,11 @@ form{
 mat-form-field{
   width: 500px;
 }
+
+.nextStep{
+  background-color: var(--bright-blue);
+  border-radius: 4px;
+  margin-left: 390px;
+  margin-right: 0;
+  margin-top: 2rem;
+}
