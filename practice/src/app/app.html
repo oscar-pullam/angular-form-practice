@@ -7,7 +7,11 @@
       <step text="Summary" [stepNumber]="4" [isActive]="activeStep() == 4"></step>
     </mat-sidenav>
     <mat-sidenav-content role="main">
-      <formStepOne [personalForm]="personalForm"></formStepOne>
+      @switch (activeStep()) {
+        @case (1) {
+          <formStepOne [personalForm]="personalForm"></formStepOne>
+        }
+      }
       <div class="buttonContainer">
         <button matButton="filled" class="stepButton" (click)="nextStep()">Next Step</button>
         @if (activeStep() != 1) {
