@@ -192,7 +192,7 @@
 
 .mat-mdc-button-base{
   border-radius: 100%;
-  background-color: lightcyan;
+
 }
 
 mat-sidenav-content{
@@ -226,4 +226,14 @@ mat-form-field{
   margin-left: 390px;
   margin-right: 0;
   margin-top: 2rem;
+}
+
+.activeStep{
+  background-color: lightcyan;
+}
+
+.inactiveStep{
+  background-color: var(--bright-blue);
+  border: 1px solid white;
+  color: white;
 }

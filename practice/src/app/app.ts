@@ -15,6 +15,7 @@ import { MatButtonModule } from '@angular/material/button';
 })
 export class App {
   protected readonly title = signal('practice');
+  activeStep = signal(1);
   personalForm = new FormGroup({
     name: new FormControl(''),
     email: new FormControl(''),
@@ -29,5 +30,13 @@ export class App {
     if (pnum.length >= 3) { pnum = "("+pnum.slice(0,3)+") "+pnum.slice(3); }
     if (pnum.length >= 9) { pnum = pnum.slice(0,9)+"-"+pnum.slice(9); }
     el.value = pnum;
+  }
+
+  public nextStep() {
+    this.activeStep.set(this.activeStep() + 1);
+  }
+
+  public previousStep() {
+    this.activeStep.set(this.activeStep() - 1);
   }
 }

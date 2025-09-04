@@ -1,10 +1,10 @@
 <main class="main">
   <mat-sidenav-container>
     <mat-sidenav mode="side" opened>
-      <step text="Your info" [stepNumber]="1"></step>
-      <step text="Select plan" [stepNumber]="2"></step>
-      <step text="Add-ons" [stepNumber]="3"></step>
-      <step text="Summary" [stepNumber]="4"></step>
+      <step text="Your info" [stepNumber]="1" [isActive]="activeStep() == 1"></step>
+      <step text="Select plan" [stepNumber]="2" [isActive]="activeStep() == 2"></step>
+      <step text="Add-ons" [stepNumber]="3" [isActive]="activeStep() == 3"></step>
+      <step text="Summary" [stepNumber]="4" [isActive]="activeStep() == 4"></step>
     </mat-sidenav>
     <mat-sidenav-content role="main">
       <div class="headers">
@@ -25,7 +25,7 @@
             <input matInput id="phone" type="tel" formControlName="phone" (keyup)="maskPhoneNo()" maxlength="14">
           </mat-form-field>
         </form>
-        <button matButton="filled" class="nextStep">Next Step</button>
+        <button matButton="filled" class="nextStep" (click)="nextStep()">Next Step</button>
     </mat-sidenav-content>
   </mat-sidenav-container>
 </main>

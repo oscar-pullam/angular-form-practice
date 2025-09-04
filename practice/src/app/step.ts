@@ -10,4 +10,5 @@ import { MatButton, MatMiniFabButton } from '@angular/material/button';
 export class Step {
    text = input.required<string>();
    stepNumber = input.required<number>();
+   isActive = input.required<boolean>();
 }
