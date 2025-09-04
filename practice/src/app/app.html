@@ -7,30 +7,13 @@
       <step text="Summary" [stepNumber]="4" [isActive]="activeStep() == 4"></step>
     </mat-sidenav>
     <mat-sidenav-content role="main">
-      <div class="headers">
-        <h1>Personal Info</h1>
-        <p class="subtitle">Please provide your name, email address, and phone number</p>
-        </div>
-        <form [formGroup]="personalForm">
-          <mat-form-field appearance="outline" floatLabel="always" hintLabel="e.g. Stephen King">
-            <mat-label>Name</mat-label>
-            <input matInput id="name" type="text" formControlName="name">
-          </mat-form-field>
-          <mat-form-field appearance="outline" floatLabel="always" hintLabel="e.g. stephenking@lorem.com">
-            <mat-label>Email Address</mat-label>
-            <input matInput id="email" type="email" formControlName="email">
-          </mat-form-field>
-          <mat-form-field appearance="outline" floatLabel="always" hintLabel="e.g. +1 234 567 890">
-            <mat-label>Phone Number</mat-label>
-            <input matInput id="phone" type="tel" formControlName="phone" (keyup)="maskPhoneNo()" maxlength="14">
-          </mat-form-field>
-        </form>
-        <div class="buttonContainer">
-          <button matButton="filled" class="stepButton" (click)="nextStep()">Next Step</button>
-          @if (activeStep() != 1) {
-            <button matButton="filled" class="stepButton" (click)="previousStep()">Previous Step</button>
-          }
-        </div>
+      <formStepOne [personalForm]="personalForm"></formStepOne>
+      <div class="buttonContainer">
+        <button matButton="filled" class="stepButton" (click)="nextStep()">Next Step</button>
+        @if (activeStep() != 1) {
+          <button matButton="filled" class="stepButton" (click)="previousStep()">Previous Step</button>
+        }
+      </div>
     </mat-sidenav-content>
   </mat-sidenav-container>
 </main>

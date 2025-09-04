@@ -6,10 +6,11 @@ import { MatSidenav, MatSidenavContainer, MatSidenavContent } from '@angular/mat
 import { RouterOutlet } from '@angular/router';
 import { Step } from './step';
 import { MatButtonModule } from '@angular/material/button';
+import { FormStepOne } from "./form-steps/form-step-one";
 
 @Component({
   selector: 'app-root',
-  imports: [MatInputModule, RouterOutlet, ReactiveFormsModule, MatFormFieldModule, MatSidenavContent, MatSidenavContainer, MatSidenav, Step, MatButtonModule],
+  imports: [MatInputModule, RouterOutlet, ReactiveFormsModule, MatFormFieldModule, MatSidenavContent, MatSidenavContainer, MatSidenav, Step, MatButtonModule, FormStepOne],
   templateUrl: './app.html',
   styleUrl: './app.css'
 })
@@ -21,16 +22,6 @@ export class App {
     email: new FormControl(''),
     phone: new FormControl(''),
   });
-
-  public maskPhoneNo() {
-    console.log('Calling')
-    let el = document.getElementById("phone") as HTMLInputElement | null;
-    if(el == null) return;
-    let pnum = el.value.replace(/\D*/g,"");
-    if (pnum.length >= 3) { pnum = "("+pnum.slice(0,3)+") "+pnum.slice(3); }
-    if (pnum.length >= 9) { pnum = pnum.slice(0,9)+"-"+pnum.slice(9); }
-    el.value = pnum;
-  }
 
   public nextStep() {
     this.activeStep.set(this.activeStep() + 1);
