@@ -1,5 +1,5 @@
 import { Component, signal } from '@angular/core';
-import { FormControl, ReactiveFormsModule } from '@angular/forms';
+import { FormControl, FormGroup, ReactiveFormsModule } from '@angular/forms';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
 import { MatSidenav, MatSidenavContainer, MatSidenavContent } from '@angular/material/sidenav';
@@ -14,6 +14,8 @@ import { Step } from './step';
 })
 export class App {
   protected readonly title = signal('practice');
-  name = new FormControl('');
-  email = new FormControl('');
+  personalForm = new FormGroup({
+    name: new FormControl(''),
+    email: new FormControl(''),
+  });
 }
