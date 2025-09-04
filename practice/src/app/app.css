@@ -203,8 +203,19 @@ mat-sidenav-content{
   color: grey;
   font-size: 1rem;
   font-weight: 500;
+  padding-top: 1rem;
 }
 
 .headers{
   padding: 2rem 0;
+}
+
+form{
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+mat-form-field{
+  width: 500px;
 }
