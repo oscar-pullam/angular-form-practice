@@ -3,10 +3,11 @@ import { FormGroup, ReactiveFormsModule } from '@angular/forms';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
 import { MatButtonModule } from '@angular/material/button';
+import { MatDatepicker, MatDatepickerModule } from '@angular/material/datepicker';
 
 @Component({
   selector: 'formStepTwo',
-  imports: [MatInputModule, ReactiveFormsModule, MatFormFieldModule, MatButtonModule],
+  imports: [MatInputModule, ReactiveFormsModule, MatFormFieldModule, MatButtonModule, MatDatepickerModule],
   templateUrl: './form-step-two.html',
   styleUrl: '../app.css'
 })
