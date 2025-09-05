@@ -1,18 +1,14 @@
 <div class="headers">
   <h1>Select Your Plan</h1>
-  <p class="subtitle">Please provide your name, email address, and phone number</p>
+  <p class="subtitle">You have the option of monthly or yearly billing</p>
 </div>
 <form [formGroup]="optionsForm()">
-  <mat-form-field appearance="outline" floatLabel="always" hintLabel="e.g. Stephen King">
+  <mat-form-field appearance="outline" floatLabel="always">
     <mat-label>Date Range</mat-label>
-    <input matInput id="name" type="text" formControlName="name">
+    <input matInput id="startDate" type="text" formControlName="startDate">
   </mat-form-field>
-  <mat-form-field appearance="outline" floatLabel="always" hintLabel="e.g. stephenking@lorem.com">
-    <mat-label>Email Address</mat-label>
-    <input matInput id="email" type="email" formControlName="email">
-  </mat-form-field>
-  <mat-form-field appearance="outline" floatLabel="always" hintLabel="e.g. +1 234 567 890">
-    <mat-label>Phone Number</mat-label>
-    <input matInput id="phone" type="tel" formControlName="phone" maxlength="14">
+  <mat-form-field appearance="outline" floatLabel="always">
+    <mat-label>Plan Level</mat-label>
+    <input matInput id="planLevel" formControlName="planLevel">
   </mat-form-field>
 </form>

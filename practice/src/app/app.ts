@@ -25,4 +25,10 @@ export class App {
     email: new FormControl(''),
     phone: new FormControl(''),
   });
+
+  optionsForm = new FormGroup({
+    startDate: new FormControl(''),
+    endDate: new FormControl(''),
+    planLevel: new FormControl(''),
+  });
 }
