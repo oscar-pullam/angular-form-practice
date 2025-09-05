@@ -1,5 +1,5 @@
 <div class="stepContainer">
-  <button matMiniFab [class]="isActive() ? 'activeStep' : 'inactiveStep'"><strong>{{this.stepNumber()}}</strong></button>
+  <button matMiniFab [class]="isActive() ? 'activeStep' : 'inactiveStep'" (click)="setAsActiveStep()"><strong>{{this.stepNumber()}}</strong></button>
   <div class="stepText">
     <div>STEP {{this.stepNumber()}}</div>
     <strong class="stepDescription">{{this.text().toUpperCase()}}</strong>
