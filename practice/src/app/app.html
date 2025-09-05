@@ -1,21 +1,21 @@
 <main class="main">
   <mat-sidenav-container>
     <mat-sidenav mode="side" opened>
-      <step text="Your info" [stepNumber]="1" [isActive]="activeStep() == 1"></step>
-      <step text="Select plan" [stepNumber]="2" [isActive]="activeStep() == 2"></step>
-      <step text="Add-ons" [stepNumber]="3" [isActive]="activeStep() == 3"></step>
-      <step text="Summary" [stepNumber]="4" [isActive]="activeStep() == 4"></step>
+      <step [text]="'Your info'" [stepNumber]="1" [isActive]="stepperService.activeStep() == 1"></step>
+      <step [text]="'Select plan'" [stepNumber]="2" [isActive]="stepperService.activeStep() == 2"></step>
+      <step [text]="'Add-ons'" [stepNumber]="3" [isActive]="stepperService.activeStep() == 3"></step>
+      <step [text]="'Summary'" [stepNumber]="4" [isActive]="stepperService.activeStep() == 4"></step>
     </mat-sidenav>
     <mat-sidenav-content role="main">
-      @switch (activeStep()) {
+      @switch (stepperService.activeStep()) {
         @case (1) {
           <formStepOne [personalForm]="personalForm"></formStepOne>
         }
       }
       <div class="buttonContainer">
-        <button matButton="filled" class="stepButton" (click)="nextStep()">Next Step</button>
-        @if (activeStep() != 1) {
-          <button matButton="filled" class="stepButton" (click)="previousStep()">Previous Step</button>
+        <button matButton="filled" class="stepButton" (click)="stepperService.nextStep()">Next Step</button>
+        @if (stepperService.activeStep() != 1) {
+          <button matButton="filled" class="stepButton" (click)="stepperService.previousStep()">Previous Step</button>
         }
       </div>
     </mat-sidenav-content>

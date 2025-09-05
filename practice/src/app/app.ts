@@ -1,4 +1,4 @@
-import { Component, signal } from '@angular/core';
+import { Component, inject, signal } from '@angular/core';
 import { FormControl, FormGroup, ReactiveFormsModule } from '@angular/forms';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
@@ -7,6 +7,7 @@ import { RouterOutlet } from '@angular/router';
 import { Step } from './step';
 import { MatButtonModule } from '@angular/material/button';
 import { FormStepOne } from "./form-steps/form-step-one";
+import { StepperService } from './stepper.service';
 
 @Component({
   selector: 'app-root',
@@ -16,18 +17,11 @@ import { FormStepOne } from "./form-steps/form-step-one";
 })
 export class App {
   protected readonly title = signal('practice');
-  activeStep = signal(1);
+  stepperService = inject(StepperService);
+
   personalForm = new FormGroup({
     name: new FormControl(''),
     email: new FormControl(''),
     phone: new FormControl(''),
   });
-
-  public nextStep() {
-    this.activeStep.set(this.activeStep() + 1);
-  }
-
-  public previousStep() {
-    this.activeStep.set(this.activeStep() - 1);
-  }
 }
