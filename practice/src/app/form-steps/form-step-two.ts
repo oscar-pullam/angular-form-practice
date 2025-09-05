@@ -1,0 +1,16 @@
+import { Component, input } from '@angular/core';
+import { FormGroup, ReactiveFormsModule } from '@angular/forms';
+import { MatFormFieldModule } from '@angular/material/form-field';
+import { MatInputModule } from '@angular/material/input';
+import { MatButtonModule } from '@angular/material/button';
+
+@Component({
+  selector: 'formStepTwo',
+  imports: [MatInputModule, ReactiveFormsModule, MatFormFieldModule, MatButtonModule],
+  templateUrl: './form-step-two.html',
+  styleUrl: '../app.css'
+})
+export class FormStepTwo {
+  optionsForm = input.required<FormGroup>();
+
+}

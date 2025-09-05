@@ -11,6 +11,9 @@
         @case (1) {
           <formStepOne [personalForm]="personalForm"></formStepOne>
         }
+        @case (2) {
+          <formStepTwo [optionsForm]="personalForm"></formStepTwo>
+        }
       }
       <div class="buttonContainer">
         <button matButton="filled" class="stepButton" (click)="stepperService.nextStep()">Next Step</button>
