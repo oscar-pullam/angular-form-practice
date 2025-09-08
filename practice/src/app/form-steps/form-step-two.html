@@ -5,10 +5,13 @@
 <form [formGroup]="optionsForm()">
   <mat-form-field appearance="outline" floatLabel="always">
     <mat-label>Date Range</mat-label>
-    <input matInput [matDatepicker]="picker" id="startDate" formControlName="startDate">
-    <mat-hint>MM/DD/YYYY</mat-hint>
+    <mat-date-range-input [rangePicker]="picker">
+      <input matStartDate id="startDate" formControlName="startDate">
+      <input matEndDate id="endDate" formControlName="endDate">
+    </mat-date-range-input>
+    <mat-hint>MM/DD/YYYY - MM/DD/YYYY</mat-hint>
     <mat-datepicker-toggle matIconSuffix [for]="picker"></mat-datepicker-toggle>
-    <mat-datepicker #picker></mat-datepicker>
+    <mat-date-range-picker #picker></mat-date-range-picker>
   </mat-form-field>
   <mat-form-field appearance="outline" floatLabel="always">
     <mat-label>Plan Level</mat-label>
