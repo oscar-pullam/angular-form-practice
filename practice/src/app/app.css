@@ -261,9 +261,10 @@ mat-form-field{
 }
 
 mat-card{
-  max-width: 100px;
+  width: 200px;
+  text-align: left;
 }
 
-mat-card-content > p{
-  color: green;
+mat-card-subtitle{
+  color: darkgrey;
 }
