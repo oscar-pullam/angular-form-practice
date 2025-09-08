@@ -268,3 +268,11 @@ mat-card{
 mat-card-subtitle{
   color: darkgrey;
 }
+
+mat-button-toggle-group{
+  border: none;
+}
+
+.mat-button-toggle-appearance-standard{
+  border: none;
+}
