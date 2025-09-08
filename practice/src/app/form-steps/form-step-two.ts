@@ -4,10 +4,11 @@ import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
 import { MatButtonModule } from '@angular/material/button';
 import { MatDatepicker, MatDatepickerModule } from '@angular/material/datepicker';
+import { MatButtonToggleModule } from '@angular/material/button-toggle';
 
 @Component({
   selector: 'formStepTwo',
-  imports: [MatInputModule, ReactiveFormsModule, MatFormFieldModule, MatButtonModule, MatDatepickerModule],
+  imports: [MatInputModule, ReactiveFormsModule, MatFormFieldModule, MatButtonModule, MatDatepickerModule, MatButtonToggleModule],
   templateUrl: './form-step-two.html',
   styleUrl: '../app.css'
 })

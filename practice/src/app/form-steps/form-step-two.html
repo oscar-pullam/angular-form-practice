@@ -13,8 +13,10 @@
     <mat-datepicker-toggle matIconSuffix [for]="picker"></mat-datepicker-toggle>
     <mat-date-range-picker #picker></mat-date-range-picker>
   </mat-form-field>
-  <mat-form-field appearance="outline" floatLabel="always">
     <mat-label>Plan Level</mat-label>
-    <input matInput id="planLevel" formControlName="planLevel">
-  </mat-form-field>
+    <mat-button-toggle-group name="planLevel" id="planLevel" formControlName="planLevel">
+      <mat-button-toggle value="bold">Arcade</mat-button-toggle>
+      <mat-button-toggle value="italic">Advanced</mat-button-toggle>
+      <mat-button-toggle value="italic">Pro</mat-button-toggle>
+    </mat-button-toggle-group>
 </form>
