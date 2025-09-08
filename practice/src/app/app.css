@@ -259,3 +259,11 @@ mat-form-field{
 .stepDescription{
   font-size: medium;
 }
+
+mat-card{
+  max-width: 100px;
+}
+
+mat-card-content > p{
+  color: green;
+}
