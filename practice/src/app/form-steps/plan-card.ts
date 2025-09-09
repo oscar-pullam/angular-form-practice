@@ -12,5 +12,6 @@ export class PlanCard {
   title = input.required<string>();
   subtitle = input.required<string>();
   icon = input.required<string>();
+  color = input.required<string>();
 
 }

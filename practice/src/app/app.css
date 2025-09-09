@@ -276,3 +276,21 @@ mat-button-toggle-group{
 .mat-button-toggle-appearance-standard{
   border: none;
 }
+
+mat-icon{
+  color: white;
+  padding: 0.75rem;
+  margin: 1rem;
+}
+
+mat-icon.purple{
+  background-color: var(--bright-blue);
+}
+
+mat-icon.pink{
+  background-color: coral;
+}
+
+mat-icon.orange{
+  background-color: orange;
+}

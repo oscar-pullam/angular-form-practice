@@ -16,13 +16,13 @@
     <mat-label>Plan Level</mat-label>
     <mat-button-toggle-group name="planLevel" id="planLevel" formControlName="planLevel" hideSingleSelectionIndicator>
       <mat-button-toggle value="bold">
-        <planCard [title]="'Arcade'" [subtitle]="'$90/year'" [icon]="'gamepad'"></planCard>
+        <planCard [title]="'Arcade'" [subtitle]="'$90/year'" [icon]="'gamepad'" [color]="'orange'"></planCard>
       </mat-button-toggle>
       <mat-button-toggle value="italic">
-        <planCard [title]="'Advanced'" [subtitle]="'$120/year'" [icon]="'bolt'"></planCard>
+        <planCard [title]="'Advanced'" [subtitle]="'$120/year'" [icon]="'bolt'" [color]="'pink'"></planCard>
       </mat-button-toggle>
       <mat-button-toggle value="italic">
-        <planCard [title]="'Pro'" [subtitle]="'$150/year'" [icon]="'rocket'"></planCard>
+        <planCard [title]="'Pro'" [subtitle]="'$150/year'" [icon]="'rocket'" [color]="'purple'"></planCard>
       </mat-button-toggle>
   </mat-button-toggle-group>
 </form>
