@@ -294,3 +294,21 @@ mat-icon.pink{
 mat-icon.orange{
   background-color: orange;
 }
+
+.billingToggle{
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  padding: 1rem;
+  margin-top: 2rem;
+  background-color: lavender;
+}
+
+.activeToggle{
+  color: var(--bright-blue);
+  font-weight: 600;
+}
+.inactiveToggle{
+  color: grey;
+  font-weight: 400;
+}
