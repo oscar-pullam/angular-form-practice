@@ -1,4 +1,4 @@
-import { Component, input } from '@angular/core';
+import { Component, input, signal } from '@angular/core';
 import { FormGroup, ReactiveFormsModule } from '@angular/forms';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
@@ -17,5 +17,11 @@ import { MatSlideToggleModule } from '@angular/material/slide-toggle';
 })
 export class FormStepTwo {
   optionsForm = input.required<FormGroup>();
+
+  activeToggle = signal(true);
+
+  public setActiveToggle(value: boolean) {
+    this.activeToggle.set(value);
+  }
 
 }

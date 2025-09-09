@@ -27,7 +27,7 @@
   </mat-button-toggle-group>
 </form>
 <div class="billingToggle">
-<div class="activeToggle">Monthly</div>
-<mat-slide-toggle id="isYearlyBilling" color="primary"></mat-slide-toggle>
-<div>Yearly</div>
+<div [class]="this.activeToggle() ? 'inactiveToggle' : 'activeToggle'">Monthly</div>
+<mat-slide-toggle id="isYearlyBilling" [checked]="this.activeToggle()" (change)="this.setActiveToggle($event.checked)"></mat-slide-toggle>
+<div [class]="this.activeToggle() ? 'activeToggle' : 'inactiveToggle'">Yearly</div>
 </div>
