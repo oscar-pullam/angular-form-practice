@@ -6,10 +6,11 @@ import { MatButtonModule } from '@angular/material/button';
 import { MatDatepicker, MatDatepickerModule } from '@angular/material/datepicker';
 import { MatButtonToggleModule } from '@angular/material/button-toggle';
 import { MatCardModule } from '@angular/material/card';
+import { PlanCard } from "./plan-card";
 
 @Component({
   selector: 'formStepTwo',
-  imports: [MatInputModule, ReactiveFormsModule, MatFormFieldModule, MatButtonModule, MatDatepickerModule, MatButtonToggleModule, MatCardModule],
+  imports: [MatInputModule, ReactiveFormsModule, MatFormFieldModule, MatButtonModule, MatDatepickerModule, MatButtonToggleModule, MatCardModule, PlanCard],
   templateUrl: './form-step-two.html',
   styleUrl: '../app.css'
 })

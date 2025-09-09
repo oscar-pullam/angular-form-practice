@@ -16,37 +16,13 @@
     <mat-label>Plan Level</mat-label>
     <mat-button-toggle-group name="planLevel" id="planLevel" formControlName="planLevel" hideSingleSelectionIndicator>
       <mat-button-toggle value="bold">
-        <mat-card appearance="outlined">
-          <mat-card-header>
-            <mat-card-title>Arcade</mat-card-title>
-            <mat-card-subtitle>$90/year</mat-card-subtitle>
-          </mat-card-header>
-          <mat-card-content>
-              2 months free
-          </mat-card-content>
-        </mat-card>
+        <planCard [title]="'Arcade'" [subtitle]="'$90/year'" [icon]="'Arcade'"></planCard>
       </mat-button-toggle>
       <mat-button-toggle value="italic">
-        <mat-card appearance="outlined">
-          <mat-card-header>
-            <mat-card-title>Advanced</mat-card-title>
-            <mat-card-subtitle>$120/yr</mat-card-subtitle>
-          </mat-card-header>
-          <mat-card-content>
-              2 months free
-          </mat-card-content>
-        </mat-card>
+        <planCard [title]="'Advanced'" [subtitle]="'$120/year'" [icon]="'Arcade'"></planCard>
       </mat-button-toggle>
       <mat-button-toggle value="italic">
-        <mat-card appearance="outlined">
-          <mat-card-header>
-            <mat-card-title>Pro</mat-card-title>
-            <mat-card-subtitle>$150/yr</mat-card-subtitle>
-          </mat-card-header>
-          <mat-card-content>
-              2 months free
-          </mat-card-content>
-        </mat-card>
+        <planCard [title]="'Pro'" [subtitle]="'$150/year'" [icon]="'Arcade'"></planCard>
       </mat-button-toggle>
   </mat-button-toggle-group>
 </form>
