@@ -1,9 +1,10 @@
 import { Component, input } from '@angular/core';
 import { MatCardModule } from '@angular/material/card';
+import { MatIcon } from '@angular/material/icon';
 
 @Component({
   selector: 'planCard',
-  imports: [MatCardModule],
+  imports: [MatCardModule, MatIcon],
   templateUrl: './plan-card.html',
   styleUrl: '../app.css'
 })
