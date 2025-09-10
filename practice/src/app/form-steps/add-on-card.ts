@@ -1,10 +1,10 @@
 import { Component, input } from '@angular/core';
 import { MatCardModule } from '@angular/material/card';
-import { MatIcon } from '@angular/material/icon';
+import { MatCheckbox } from "@angular/material/checkbox";
 
 @Component({
   selector: 'addonCard',
-  imports: [MatCardModule, MatIcon],
+  imports: [MatCardModule, MatCheckbox],
   templateUrl: './add-on-card.html',
   styleUrl: '../app.css'
 })
