@@ -13,8 +13,7 @@
     <mat-datepicker-toggle matIconSuffix [for]="picker"></mat-datepicker-toggle>
     <mat-date-range-picker #picker></mat-date-range-picker>
   </mat-form-field>
-    <mat-label>Plan Level</mat-label>
-    <mat-button-toggle-group name="planLevel" id="planLevel" formControlName="planLevel" hideSingleSelectionIndicator>
+    <mat-button-toggle-group name="planLevel" id="planLevel" formControlName="planLevel" hideSingleSelectionIndicator aria-label="Plan Level">
       <mat-button-toggle value="bold">
         <planCard [title]="'Arcade'" [subtitle]="this.activeToggle() ? '$90/year' : '$9/mo'" [icon]="'gamepad'" [color]="'orange'" [showSavings]="this.activeToggle()"></planCard>
       </mat-button-toggle>

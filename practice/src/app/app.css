@@ -197,6 +197,9 @@
 
 mat-sidenav-content{
   padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .subtitle{
@@ -302,6 +305,8 @@ mat-icon.orange{
   padding: 1rem;
   margin-top: 2rem;
   background-color: lavender;
+  justify-content: center;
+  width: 635px;
 }
 
 .activeToggle{
@@ -314,9 +319,10 @@ mat-icon.orange{
 }
 
 .mat-button-toggle-appearance-standard.mat-button-toggle-checked{
-  background-color: white;
+  background-color: inherit;
 }
 
-.mat-button-toggle-appearance-standard.mat-button-toggle-checked planCard{
+.mat-button-toggle-appearance-standard.mat-button-toggle-checked .mat-mdc-card-outlined{
   background-color: lavender;
+  border-color: darkorchid;
 }
