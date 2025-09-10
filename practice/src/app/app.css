@@ -326,3 +326,17 @@ mat-icon.orange{
   background-color: lavender;
   border-color: darkorchid;
 }
+
+.addonCard{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  width: 500px;
+}
+
+.costText{
+  color: var(--bright-blue);
+  font-weight: 600;
+}

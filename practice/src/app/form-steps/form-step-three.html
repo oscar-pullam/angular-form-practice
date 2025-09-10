@@ -1,6 +1,9 @@
 <div class="headers">
-  <h1>Select Your Plan</h1>
-  <p class="subtitle">You have the option of monthly or yearly billing</p>
+  <h1>Pick Add-ons</h1>
+  <p class="subtitle">Add-ons help enhance your gaming experience.</p>
 </div>
 <form [formGroup]="addonsForm()">
+  <addonCard [title]="'Online service'" [subtitle]="'Access to multiplayer games'" [cost]="'1'"></addonCard>
+  <addonCard [title]="'Larger storage'" [subtitle]="'Extra 1TB of cloud storage'" [cost]="'2'"></addonCard>
+  <addonCard [title]="'Customizable profile'" [subtitle]="'Custom theme on your profile'" [cost]="'2'"></addonCard>
 </form>
