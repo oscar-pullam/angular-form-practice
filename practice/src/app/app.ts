@@ -9,10 +9,11 @@ import { MatButtonModule } from '@angular/material/button';
 import { FormStepOne } from "./form-steps/form-step-one";
 import { StepperService } from './stepper.service';
 import { FormStepTwo } from './form-steps/form-step-two';
+import { FormStepThree } from './form-steps/form-step-three';
 
 @Component({
   selector: 'app-root',
-  imports: [MatInputModule, RouterOutlet, ReactiveFormsModule, MatFormFieldModule, MatSidenavContent, MatSidenavContainer, MatSidenav, Step, MatButtonModule, FormStepOne, FormStepTwo],
+  imports: [MatInputModule, RouterOutlet, ReactiveFormsModule, MatFormFieldModule, MatSidenavContent, MatSidenavContainer, MatSidenav, Step, MatButtonModule, FormStepOne, FormStepTwo, FormStepThree],
   templateUrl: './app.html',
   styleUrl: './app.css'
 })
@@ -30,5 +31,11 @@ export class App {
     startDate: new FormControl(''),
     endDate: new FormControl(''),
     planLevel: new FormControl(''),
+  });
+
+  addonsForm = new FormGroup({
+    onlineService: new FormControl(false),
+    storage: new FormControl(false),
+    profile: new FormControl(false),
   });
 }
