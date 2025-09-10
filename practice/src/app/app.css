@@ -312,3 +312,11 @@ mat-icon.orange{
   color: grey;
   font-weight: 400;
 }
+
+.mat-button-toggle-appearance-standard.mat-button-toggle-checked{
+  background-color: white;
+}
+
+.mat-button-toggle-appearance-standard.mat-button-toggle-checked planCard{
+  background-color: lavender;
+}

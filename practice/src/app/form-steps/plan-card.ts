@@ -13,6 +13,6 @@ export class PlanCard {
   subtitle = input.required<string>();
   icon = input.required<string>();
   color = input.required<string>();
-  showSavings = input.required<boolean>();
+  showSavings = input<boolean>(true);
 
 }
